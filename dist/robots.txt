@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Allow all image files
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemap
+Sitemap: https://littlekingdomschool.in/sitemap.xml
+Sitemap: https://littlekingdomschool.in/image-sitemap.xml

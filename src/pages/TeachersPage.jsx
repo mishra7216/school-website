@@ -102,7 +102,8 @@ const TeachersPage = () => {
                 {/* Fallback image handler injected via onError on the img tag */}
                 <img 
                   src={teacher.image} 
-                  alt={teacher.name}
+                  alt={`${teacher.name} - ${teacher.designation} Best School in Baihar - Little Kingdom School Balaghat${teacher.subject ? ' - ' + teacher.subject + ' Teacher Baihar' : ''}`}
+                  title={`${teacher.name} - ${teacher.designation} at Best School in Baihar Balaghat - Little Kingdom School`}
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop' }}
                 />

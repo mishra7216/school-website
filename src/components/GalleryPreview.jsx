@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const GalleryPreview = () => {
   const images = [
-    { id: 'school-assembly', src: '/gallery-1.jpg', caption: 'School Assembly', to: '/school-assembly' },
-    { id: 'annual-function', src: '/gallery-2.jpg', caption: 'Annual Function', to: '/gallery/annual-function' },
-    { id: 'republic-day-performance', src: '/gallery-3.jpg', caption: 'Republic Day Performance', to: '/republic-day' },
-    { id: 'pre-primary-wing', src: '/gallery-4.jpg', caption: "School's Pre-Primary Wing", to: '/gallery/pre-primary-wing' },
-    { id: 'playground', src: '/gallery-5.jpg', caption: "School's Playground", to: '/gallery/playground' },
-    { id: 'computer-lab', src: '/gallery-6.jpg', caption: 'Computer Lab', to: '/computer-lab' },
+    { id: 'school-assembly', src: '/gallery-1.jpg', caption: 'School Assembly', alt: 'School Assembly in Baihar - Best School in Baihar - Morning Assembly at Little Kingdom School Baihar Balaghat', to: '/school-assembly' },
+    { id: 'annual-function', src: '/gallery-2.jpg', caption: 'Annual Function', alt: 'Annual Function Baihar - Biggest School Cultural Event in Balaghat District - Little Kingdom School Baihar Annual Fest', to: '/gallery/annual-function' },
+    { id: 'republic-day-performance', src: '/gallery-3.jpg', caption: 'Republic Day Performance', alt: 'Republic Day Baihar - First Prize Dance Performance - Best School in Baihar Balaghat - Little Kingdom School', to: '/republic-day' },
+    { id: 'pre-primary-wing', src: '/gallery-4.jpg', caption: "School's Pre-Primary Wing", alt: 'Best Kindergarten in Baihar - Pre-Primary Wing Balaghat - Best Nursery School in Baihar - Little Kingdom School', to: '/gallery/pre-primary-wing' },
+    { id: 'playground', src: '/gallery-5.jpg', caption: "School's Playground", alt: 'Best Sports Facilities in Baihar - School Playground Balaghat - Cricket Ground Kabaddi Hall - Little Kingdom School Baihar', to: '/gallery/playground' },
+    { id: 'computer-lab', src: '/gallery-6.jpg', caption: 'Computer Lab', alt: 'Best Computer Lab in Baihar - Smart Classroom Balaghat - School Technology Lab - Little Kingdom School Baihar', to: '/computer-lab' },
   ];
 
   return (
@@ -39,7 +39,8 @@ const GalleryPreview = () => {
               {/* Image */}
               <img 
                 src={image.src} 
-                alt={image.caption} 
+                alt={image.alt || image.caption} 
+                title={image.caption + ' - Little Kingdom School Baihar'}
                 className="w-full h-full object-cover transform group-hover:scale-[1.15] transition-transform duration-700 ease-[cubic-bezier(0.25,0.46,0.45,0.94)]"
                 loading="lazy"
               />

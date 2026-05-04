@@ -64,8 +64,8 @@ const timeline = [
 ];
 
 const glimpses = [
-  { url: '/republicdayglimpses1.jpg', caption: 'Behind the Scenes' },
-  { url: '/republicdayglimpses2.webp', caption: 'Stage Moments' },
+  { url: '/republicdayglimpses1.jpg', caption: 'Behind the Scenes', alt: 'Republic Day Preparation Baihar - Best School Dance Practice Balaghat - Little Kingdom School Rehearsal' },
+  { url: '/republicdayglimpses2.webp', caption: 'Stage Moments', alt: 'Republic Day Performance Baihar - Patriotic Dance Balaghat District - Little Kingdom School Stage' },
 ];
 
 const RepublicDayPage = () => {
@@ -86,7 +86,7 @@ const RepublicDayPage = () => {
         <div className="fixed inset-0 z-[100] bg-black/97 flex items-center justify-center backdrop-blur-sm" onClick={() => setLightbox(null)}>
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prevLb}>‹</button>
-          <img src={lightbox} alt="Republic Day" className="max-w-[90vw] max-h-[85vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
+          <img src={lightbox} alt="Republic Day Performance at Little Kingdom Senior Secondary School Baihar - 5 Consecutive First Prizes" className="max-w-[90vw] max-h-[85vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={nextLb}>›</button>
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs font-semibold tracking-widest">{lbIdx + 1} / {allPhotos.length}</div>
         </div>
@@ -200,7 +200,7 @@ const RepublicDayPage = () => {
                         <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
                         {hasImage && (
                           <div className="mt-4 rounded-2xl overflow-hidden cursor-pointer group border border-white/5" onClick={() => openLb(item.image)}>
-                            <img src={item.image} alt={item.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <img src={item.image} alt={`Republic Day ${item.year} - ${item.result} - Little Kingdom School Baihar Inter-School Competition`} title={`Republic Day ${item.year} ${item.result} - Little Kingdom School Baihar`} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
                           </div>
                         )}
                       </div>
@@ -247,7 +247,7 @@ const RepublicDayPage = () => {
                     <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
                     {hasImage && (
                       <div className="mt-3 rounded-xl overflow-hidden cursor-pointer group border border-white/5" onClick={() => openLb(item.image)}>
-                        <img src={item.image} alt={item.title} className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <img src={item.image} alt={`Republic Day ${item.year} - ${item.result} - Little Kingdom School Baihar Inter-School Competition`} title={`Republic Day ${item.year} ${item.result} - Little Kingdom School Baihar`} className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-500" />
                       </div>
                     )}
                   </div>
@@ -271,7 +271,7 @@ const RepublicDayPage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {glimpses.map((g, idx) => (
             <div key={idx} className="rounded-2xl overflow-hidden group cursor-pointer border border-white/5 hover:border-white/15 transition-all" onClick={() => openLb(g.url)}>
-              <img src={g.url} alt={g.caption} className="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={g.url} alt={g.alt || g.caption + ' - Republic Day at Little Kingdom School Baihar'} title={g.caption + ' - Republic Day Little Kingdom School'} className="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-700" />
             </div>
           ))}
         </div>

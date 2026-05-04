@@ -12,26 +12,26 @@ const AnnualFunctionPage = () => {
 
   // 9 High-Quality Event Placeholders designed for an interlocking Grid
   const images = [
-    { id: 1, url: "/annual-function-1.JPG", span: "col-span-2 row-span-2" },
-    { id: 2, url: "/annual-function-2.JPG", span: "col-span-1 row-span-1" },
-    { id: 3, url: "/annual-function-3.JPG", span: "col-span-1 row-span-1" },
-    { id: 4, url: "/annual-function-4.JPG", span: "col-span-1 row-span-2" },
-    { id: 5, url: "/annual-function-5.JPG", span: "col-span-1 row-span-1" },
-    { id: 6, url: "/annual-function-6.JPG", span: "col-span-1 row-span-1" },
-    { id: 7, url: "/annual-function-7.JPG", span: "col-span-2 row-span-1" },
-    { id: 8, url: "/annual-function-8.JPG", span: "col-span-1 row-span-1" },
-    { id: 9, url: "/annual-function-9.JPG", span: "col-span-1 row-span-1" },
-    { id: 10, url: "/annual-function-10.JPG", span: "col-span-2 row-span-2" },
-    { id: 11, url: "/annual-function-11.JPG", span: "col-span-1 row-span-1" },
-    { id: 12, url: "/annual-function-12.JPG", span: "col-span-1 row-span-2" },
-    { id: 13, url: "/annual-function-13.jpg", span: "col-span-1 row-span-1" },
-    { id: 14, url: "/annual-function-14.JPG", span: "col-span-1 row-span-1" },
-    { id: 15, url: "/annual-function-15.JPG", span: "col-span-2 row-span-1" },
-    { id: 16, url: "/annual-function-16.JPG", span: "col-span-1 row-span-1" },
-    { id: 17, url: "/annual-function-17.JPG", span: "col-span-1 row-span-1" },
-    { id: 18, url: "/annual-function-18.JPG", span: "col-span-1 row-span-2" },
-    { id: 19, url: "/annual-function-19.JPG", span: "col-span-2 row-span-1" },
-    { id: 20, url: "/annual-function-20.JPG", span: "col-span-1 row-span-1" }
+    { id: 1, url: "/annual-function-1.JPG", span: "col-span-2 row-span-2", alt: "Annual Function Baihar - Best School Cultural Event in Balaghat District - Little Kingdom School Stage Performance" },
+    { id: 2, url: "/annual-function-2.JPG", span: "col-span-1 row-span-1", alt: "School Annual Function Baihar Balaghat - Cultural Dance Performance - Little Kingdom School LKPS" },
+    { id: 3, url: "/annual-function-3.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Baihar - Group Dance Performance - Best School Event in Balaghat - Little Kingdom School" },
+    { id: 4, url: "/annual-function-4.JPG", span: "col-span-1 row-span-2", alt: "School Drama Performance Baihar - Annual Cultural Fest Balaghat - Little Kingdom School Annual Function" },
+    { id: 5, url: "/annual-function-5.JPG", span: "col-span-1 row-span-1", alt: "Student Talent Show Baihar - Best School Annual Function Balaghat - LKPS Baihar Cultural Event" },
+    { id: 6, url: "/annual-function-6.JPG", span: "col-span-1 row-span-1", alt: "Biggest Annual Function in Baihar District - School Cultural Celebration Balaghat - Little Kingdom School" },
+    { id: 7, url: "/annual-function-7.JPG", span: "col-span-2 row-span-1", alt: "School Music Performance Baihar - Annual Function Balaghat - Best Cultural Event - Little Kingdom School" },
+    { id: 8, url: "/annual-function-8.JPG", span: "col-span-1 row-span-1", alt: "Prize Distribution Baihar School - Annual Function Awards Balaghat - Little Kingdom School LKPS" },
+    { id: 9, url: "/annual-function-9.JPG", span: "col-span-1 row-span-1", alt: "Dance Performance Baihar - School Annual Day Balaghat District - Little Kingdom School Annual Function" },
+    { id: 10, url: "/annual-function-10.JPG", span: "col-span-2 row-span-2", alt: "Best School Annual Function Baihar Balaghat - Grand Stage Show - Little Kingdom School Biggest Fest" },
+    { id: 11, url: "/annual-function-11.JPG", span: "col-span-1 row-span-1", alt: "Students Stage Performance Baihar - School Cultural Event Balaghat - Little Kingdom School Annual Day" },
+    { id: 12, url: "/annual-function-12.JPG", span: "col-span-1 row-span-2", alt: "Colorful Annual Function Baihar - School Event Balaghat District - Little Kingdom School Performance" },
+    { id: 13, url: "/annual-function-13.jpg", span: "col-span-1 row-span-1", alt: "Cultural Program Baihar School - Annual Function Balaghat - Little Kingdom School Event" },
+    { id: 14, url: "/annual-function-14.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Highlights Baihar - Best School Event in Balaghat - Little Kingdom Senior Secondary School" },
+    { id: 15, url: "/annual-function-15.JPG", span: "col-span-2 row-span-1", alt: "Grand Finale Annual Function Baihar Balaghat - Little Kingdom School - Biggest School Fest in District" },
+    { id: 16, url: "/annual-function-16.JPG", span: "col-span-1 row-span-1", alt: "Student Performance Baihar School - Annual Cultural Event Balaghat - LKPS Annual Function" },
+    { id: 17, url: "/annual-function-17.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Celebration Baihar - Best School in Balaghat - Little Kingdom Public School Event" },
+    { id: 18, url: "/annual-function-18.JPG", span: "col-span-1 row-span-2", alt: "Stage Decoration Annual Function Baihar - School Event Balaghat District - LKPS Annual Function" },
+    { id: 19, url: "/annual-function-19.JPG", span: "col-span-2 row-span-1", alt: "Group Dance Annual Function Baihar - Biggest School Fest Balaghat District - Little Kingdom School" },
+    { id: 20, url: "/annual-function-20.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Baihar School - Closing Ceremony Balaghat - Little Kingdom School Cultural Fest" }
   ];
 
   return (
@@ -48,7 +48,7 @@ const AnnualFunctionPage = () => {
           </button>
           <img 
             src={lightboxImage} 
-            alt="Enlarged stage moment" 
+            alt="Annual Function performance at Little Kingdom Senior Secondary School Baihar" 
             className="max-w-[95%] max-h-[90vh] object-contain rounded-xl shadow-[0_0_50px_rgba(212,175,55,0.15)] animate-in zoom-in-95 duration-300"
           />
         </div>
@@ -111,7 +111,8 @@ const AnnualFunctionPage = () => {
               >
                 <img 
                   src={img.url} 
-                  alt="Annual Function Moment" 
+                  alt={img.alt || `Annual Function at Little Kingdom School Baihar - Event Photo ${img.id}`}
+                  title={`Annual Function Photo ${img.id} - Little Kingdom School Baihar`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:opacity-80"
                 />
                 

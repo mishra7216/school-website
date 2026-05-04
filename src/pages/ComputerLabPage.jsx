@@ -3,8 +3,8 @@ import { ArrowLeft, X, Monitor, Cpu, Wifi, BookOpen, Lightbulb, Projector } from
 import { Link } from 'react-router-dom';
 
 const photos = [
-  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab' },
-  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom' },
+  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab', alt: 'Best Computer Lab in Baihar - School Computer Lab Balaghat - Little Kingdom School Technology Lab Baihar MP' },
+  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom', alt: 'Best Smart Classroom in Baihar - Digital Board School Balaghat - Little Kingdom School Smart Class Baihar' },
 ];
 
 const features = [
@@ -34,7 +34,7 @@ const ComputerLabPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Lab" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Technology facilities at Little Kingdom Senior Secondary School Baihar" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{photos[lightboxIndex].label}</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={next}>›</button>
@@ -121,7 +121,7 @@ const ComputerLabPage = () => {
                   <span className="text-white font-extrabold text-lg tracking-wide">{photo.label}</span>
                 </div>
                 <div className="relative h-72 sm:h-80 bg-gray-50 overflow-hidden">
-                  <img src={photo.url} alt={photo.label} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={photo.url} alt={photo.alt || photo.label + ' at Little Kingdom School Baihar'} title={photo.label + ' - Little Kingdom Senior Secondary School Baihar'} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-deepblue/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="bg-white text-deepblue font-extrabold text-sm px-6 py-3 rounded-full shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">
                       View Full Photo

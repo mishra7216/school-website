@@ -47,7 +47,7 @@ const About = () => {
           <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl shadow-primary/20 border-8 border-white transform hover:-rotate-1 transition-transform duration-700">
              <img 
                src="/about-main.jpg" 
-               alt="School Campus Excellence" 
+               alt="Best School in Baihar Balaghat - Little Kingdom School Campus - Top School in Balaghat District Madhya Pradesh" 
                className="w-full h-[300px] sm:h-[350px] lg:h-[420px] object-cover"
                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop' }}
              />
@@ -58,7 +58,7 @@ const About = () => {
           <div className="absolute -bottom-10 -left-8 sm:-bottom-12 sm:-left-12 z-20 rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white w-40 h-40 sm:w-48 sm:h-48 hidden sm:block transform hover:scale-105 transition-transform duration-500">
             <img 
                src="/about-secondary.jpg" 
-               alt="Students studying and learning" 
+               alt="Students Learning at Best School in Baihar - Little Kingdom School Balaghat - Quality Education Since 2009" 
                className="w-full h-full object-cover"
                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1427504494785-3a9a27b43c62?q=80&w=800&auto=format&fit=crop' }}
             />

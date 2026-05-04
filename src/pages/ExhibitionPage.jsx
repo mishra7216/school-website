@@ -64,7 +64,7 @@ const ExhibitionPage = () => {
           {/* Image */}
           <img
             src={lightbox}
-            alt="Exhibition"
+            alt="Science and Innovation Exhibition at Little Kingdom School Baihar"
             className="max-w-[90vw] max-h-[85vh] object-contain rounded-2xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
@@ -163,7 +163,8 @@ const ExhibitionPage = () => {
               >
                 <img
                   src={img.url}
-                  alt={`Exhibition ${img.id}`}
+                  alt={`Annual Science and Innovation Exhibition Photo ${img.id} at Little Kingdom Senior Secondary School Baihar`}
+                  title={`Exhibition Photo ${img.id} - Little Kingdom School Baihar`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
                   style={{ transition: 'transform 0.7s ease' }}
                 />

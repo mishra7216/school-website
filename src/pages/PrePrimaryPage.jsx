@@ -11,10 +11,10 @@ const PrePrimaryPage = () => {
   // Carousel State and Logic
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime" },
-    { url: "/kindergarten-banner-2.jpg", caption: "Creative Arts" },
-    { url: "/kindergarten-banner-3.jpg", caption: "Learning Together" },
-    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities" }
+    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime", alt: "Best Kindergarten in Baihar - Nursery School Balaghat - Joyful Playtime at Little Kingdom School Pre-Primary Wing Baihar" },
+    { url: "/kindergarten-banner-2.jpg", caption: "Creative Arts", alt: "Best Pre-Primary School in Baihar Balaghat - Creative Arts Kindergarten - Little Kingdom School Nursery Wing" },
+    { url: "/kindergarten-banner-3.jpg", caption: "Learning Together", alt: "Top Kindergarten Baihar - Best Nursery School in Balaghat District - Children Learning at Little Kingdom School" },
+    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities", alt: "Best Kindergarten Outdoor Activities Baihar - Pre-Primary School Balaghat - Little Kingdom School Kindergarten" }
   ];
 
   // Auto-play the carousel every 4 seconds
@@ -103,7 +103,8 @@ const PrePrimaryPage = () => {
              <div className="absolute inset-0 bg-[#FF6B6B]/20 rounded-full blur-xl transform translate-x-3 translate-y-3"></div>
              <img 
                src="/Kindergarten%20Head.jpeg" 
-               alt="Kindergarten Incharge" 
+               alt="Mrs Asna Qureshi - Best Kindergarten Head in Baihar - Nursery School Teacher Balaghat - Little Kingdom School Pre-Primary" 
+               title="Mrs Asna Qureshi - Kindergarten Head - Best Nursery School Baihar Balaghat" 
                className="relative w-full h-full object-cover rounded-full border-[8px] border-white shadow-lg bg-gray-100 transform group-hover:-rotate-3 group-hover:scale-105 transition-all duration-300"
              />
              {/* Cute decorative icon */}
@@ -152,7 +153,8 @@ const PrePrimaryPage = () => {
               >
                 <img 
                   src={slide.url} 
-                  alt={slide.caption} 
+                  alt={slide.alt || slide.caption + ' at Little Kingdom School Kindergarten Wing Baihar'}
+                  title={slide.caption + ' - Little Kingdom School Kindergarten'} 
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>

@@ -10,7 +10,10 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 transition-transform duration-[10s] hover:scale-100"
         style={{ backgroundImage: "url('/school-hero.jpg')" }}
-      ></div>
+      >
+        {/* Hidden img tag for Google Images SEO — background-image is not crawlable */}
+        <img src="/school-hero.jpg" alt="Best School in Baihar - Little Kingdom Senior Secondary School Baihar Balaghat District Madhya Pradesh - Top School Baihar MP - Best School Balaghat - LKPS Baihar Campus" title="Best School in Baihar and Balaghat District - Little Kingdom Senior Secondary School" className="sr-only" width="1920" height="1080" loading="eager" />
+      </div>
 
       {/* ── Multi-layer Gradient Overlay ── */}
       {/* Dark at bottom for text legibility, subtle at top */}

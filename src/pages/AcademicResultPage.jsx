@@ -3,13 +3,13 @@ import { ArrowLeft, X, Trophy, Star, Award, GraduationCap, TrendingUp, Medal } f
 import { Link } from 'react-router-dom';
 
 const resultImages = [
-  { id: 1, url: '/result2023-24.webp', year: '2023–24' },
-  { id: 2, url: '/result2024-25.webp', year: '2024–25' },
-  { id: 3, url: '/result24-25(1).webp', year: '2024–25 (I)' },
-  { id: 4, url: '/result24-25(2).webp', year: '2024–25 (II)' },
-  { id: 5, url: '/boardresultclass82025-26.jpg', year: '2025–26 (Class 8)' },
-  { id: 6, url: '/boardresultclass10th2025-26.jpg', year: '2025–26 (Class 10)' },
-  { id: 7, url: '/board-result.jpg', year: 'Board Result' },
+  { id: 1, url: '/result2023-24.webp', year: '2023–24', alt: 'Board Results 2023-24 Baihar - District Topper Balaghat - Best School Results Little Kingdom School' },
+  { id: 2, url: '/result2024-25.webp', year: '2024–25', alt: 'Board Results 2024-25 Baihar - Best School Results Balaghat District - Little Kingdom School Topper' },
+  { id: 3, url: '/result24-25(1).webp', year: '2024–25 (I)', alt: 'Academic Results Baihar School - Best Performance Balaghat - Little Kingdom School Results 2024-25' },
+  { id: 4, url: '/result24-25(2).webp', year: '2024–25 (II)', alt: 'School Results Baihar 2024-25 - Top Students Balaghat District - Little Kingdom School Academic Record' },
+  { id: 5, url: '/boardresultclass82025-26.jpg', year: '2025–26 (Class 8)', alt: 'Class 8 Board Results Baihar 2025-26 - Best School Results Balaghat - Little Kingdom School MPBSE' },
+  { id: 6, url: '/boardresultclass10th2025-26.jpg', year: '2025–26 (Class 10)', alt: 'Class 10 Board Results Baihar 2025-26 - District Topper Balaghat - Best School Little Kingdom MPBSE' },
+  { id: 7, url: '/board-result.jpg', year: 'Board Result', alt: 'Best Board Exam Results Baihar - School Toppers Balaghat District - Little Kingdom School Academic Excellence' },
 ];
 
 const highlights = [
@@ -39,7 +39,7 @@ const AcademicResultPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white p-4 rounded-full z-10 text-2xl font-bold" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Academic Result" className="max-w-[90vw] max-h-[80vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Academic Board Exam Results at Little Kingdom Senior Secondary School Baihar" className="max-w-[90vw] max-h-[80vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{resultImages[lightboxIndex].year} Results</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white p-4 rounded-full z-10 text-2xl font-bold" onClick={next}>›</button>
@@ -132,7 +132,7 @@ const AcademicResultPage = () => {
                 </div>
                 {/* Image */}
                 <div className="relative h-64 sm:h-80 bg-gray-50">
-                  <img src={img.url} alt={`Result ${img.year}`} className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105" />
+                  <img src={img.url} alt={img.alt || `Board Result ${img.year} - Little Kingdom School Baihar`} title={`Board Exam Results Session ${img.year} - Little Kingdom Senior Secondary School Baihar`} className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105" />
                   {/* Hover overlay */}
                   <div className="absolute inset-0 bg-deepblue/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="bg-white text-deepblue font-extrabold text-sm px-6 py-3 rounded-full shadow-xl transform scale-90 group-hover:scale-100 transition-transform duration-300">

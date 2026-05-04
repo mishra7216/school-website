@@ -7,12 +7,12 @@ const PlaygroundPage = () => {
   const [lightbox, setLightbox] = useState(null);
 
   const images = [
-    { id: 1, url: '/playground-1.jpg', span: 'col-span-2 row-span-2' },
-    { id: 2, url: '/playground-2.jpg', span: 'col-span-1 row-span-1' },
-    { id: 3, url: '/playground-3.jpg', span: 'col-span-1 row-span-1' },
-    { id: 4, url: '/playground-4.jpg', span: 'col-span-1 row-span-1' },
-    { id: 5, url: '/playground-5.jpg', span: 'col-span-2 row-span-1' },
-    { id: 6, url: '/playground-6.jpg', span: 'col-span-1 row-span-1' },
+    { id: 1, url: '/playground-1.jpg', span: 'col-span-2 row-span-2', alt: 'Best Sports Facilities in Baihar - School Cricket Ground Balaghat - Little Kingdom School Playground Baihar' },
+    { id: 2, url: '/playground-2.jpg', span: 'col-span-1 row-span-1', alt: 'Indoor Kabaddi Hall Baihar - Best Sports School in Balaghat - Little Kingdom School Sports Facility' },
+    { id: 3, url: '/playground-3.jpg', span: 'col-span-1 row-span-1', alt: 'School Sports Facilities Baihar Balaghat - Best School Playground in Baihar MP - Little Kingdom School' },
+    { id: 4, url: '/playground-4.jpg', span: 'col-span-1 row-span-1', alt: 'Athletics Track Baihar - School Running Ground Balaghat District - Little Kingdom School Sports' },
+    { id: 5, url: '/playground-5.jpg', span: 'col-span-2 row-span-1', alt: 'Outdoor Sports School Baihar - Best School Sports in Balaghat - Little Kingdom School Playground' },
+    { id: 6, url: '/playground-6.jpg', span: 'col-span-1 row-span-1', alt: 'Table Tennis Facility Baihar - Indoor Sports School Balaghat - Little Kingdom School Sports Infrastructure' },
   ];
 
   const features = [
@@ -33,7 +33,7 @@ const PlaygroundPage = () => {
           <button className="absolute top-6 right-6 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full" onClick={() => setLightbox(null)}>
             <X size={26} />
           </button>
-          <img src={lightbox} alt="Playground" className="max-w-[93vw] max-h-[88vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
+          <img src={lightbox} alt="Sports and Playground facilities at Little Kingdom School Baihar" className="max-w-[93vw] max-h-[88vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
 
@@ -123,7 +123,8 @@ const PlaygroundPage = () => {
               >
                 <img
                   src={img.url}
-                  alt={`Playground ${img.id}`}
+                  alt={img.alt || `Playground Photo ${img.id} at Little Kingdom School Baihar`}
+                  title={`Sports & Playground - Little Kingdom School Baihar`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deepblue/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-5">
