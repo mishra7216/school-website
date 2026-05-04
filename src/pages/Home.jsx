@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import GalleryPreview from '../components/GalleryPreview';
 import About from '../components/About';
 import Features from '../components/Features';
+import InstagramShowcase from '../components/InstagramShowcase';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <GalleryPreview />
       <About />
       <Features />
+      <InstagramShowcase />
     </>
   );
 };
