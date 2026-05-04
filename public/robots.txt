@@ -6,5 +6,5 @@ User-agent: Googlebot-Image
 Allow: /
 
 # Sitemap
-Sitemap: https://littlekingdomschool.in/sitemap.xml
-Sitemap: https://littlekingdomschool.in/image-sitemap.xml
+Sitemap: https://littlekingdombaihar.in/sitemap.xml
+Sitemap: https://littlekingdombaihar.in/image-sitemap.xml
