@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Quote } from 'lucide-react';
+import PageSEO from '../components/PageSEO';
 
 const AboutPage = () => {
   // Ensure the page loads at the top
@@ -8,6 +9,12 @@ const AboutPage = () => {
   }, []);
 
   return (
+    <>
+      <PageSEO
+        title="About Little Kingdom School Baihar | Best School in Baihar & Balaghat District MP"
+        description="About Little Kingdom Senior Secondary School Baihar - Best school in Baihar, Balaghat district, Madhya Pradesh. Founded in 2009 by Pravin Kumar Mishra. Largest school in Baihar with district toppers, modern infrastructure, experienced faculty. Best school Balaghat MP."
+        keywords="about Little Kingdom School, best school in Baihar, best school Balaghat, school Baihar MP, Pravin Kumar Mishra director Baihar, Varsha Mishra principal Baihar, top school Balaghat district, school Baihar Madhya Pradesh, LKPS Baihar about, school history Baihar, best education Baihar Balaghat"
+      />
     <div className="bg-white min-h-screen pb-24">
       {/* Header Section */}
       <div className="bg-lightblue/50 py-24 relative overflow-hidden border-b border-gray-100">
@@ -138,6 +145,7 @@ const AboutPage = () => {
       </div>
       
     </div>
+    </>
   );
 };
 

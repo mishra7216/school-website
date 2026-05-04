@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft, X, Lightbulb, Microscope, Cpu, Palette, Users, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const totalPhotos = 14;
 const images = Array.from({ length: totalPhotos }, (_, i) => ({
@@ -48,6 +49,12 @@ const ExhibitionPage = () => {
   };
 
   return (
+    <>
+      <PageSEO
+        title="Science & Innovation Exhibition Baihar | School Exhibition Balaghat District - Little Kingdom School"
+        description="Science and Innovation Exhibition at Little Kingdom School Baihar. Best school exhibition in Baihar and Balaghat district MP. Student science projects, technology innovation, creative arts display. School science fair Baihar. Exhibition Balaghat school."
+        keywords="science exhibition Baihar, school exhibition Balaghat, innovation fair Baihar school, science project school Baihar, school science fair Balaghat, exhibition Baihar MP, technology exhibition school Baihar, student projects Balaghat, school expo Baihar, creative exhibition Balaghat district, Little Kingdom exhibition"
+      />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 
       {/* ── LIGHTBOX ── */}
@@ -198,6 +205,7 @@ const ExhibitionPage = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

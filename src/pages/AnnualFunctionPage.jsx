@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Calendar, MapPin, Sparkles, Star, Award, Music, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const AnnualFunctionPage = () => {
   // Ensure the page loads at the top
@@ -35,6 +36,12 @@ const AnnualFunctionPage = () => {
   ];
 
   return (
+    <>
+      <PageSEO
+        title="Annual Function Baihar | Biggest School Cultural Fest in Balaghat District - Little Kingdom School"
+        description="Annual Function at Little Kingdom School Baihar - Biggest school cultural event in Baihar and Balaghat district Madhya Pradesh. Grand stage performances, dance, drama, music. Annual day celebration Baihar. School cultural fest Balaghat. Best annual function MP."
+        keywords="annual function Baihar, school cultural event Balaghat, annual day Baihar school, cultural fest Baihar, school event Balaghat district, annual function Balaghat, school celebration Baihar MP, dance performance Baihar school, drama school Baihar, biggest school event Balaghat, Little Kingdom annual function"
+      />
     <div className="bg-[#050B14] min-h-screen text-gray-200 font-sans selection:bg-[#D4AF37]/30 selection:text-[#FFF]">
       
       {/* Lightbox Modal (Conditional Rendering) */}
@@ -129,6 +136,7 @@ const AnnualFunctionPage = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft, X, Sun, BookOpen, Users, Heart, Star, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const wings = [
   {
@@ -42,6 +43,12 @@ const SchoolAssemblyPage = () => {
   const next = (e) => { e.stopPropagation(); const n = (lightboxIndex + 1) % wings.length; setLightboxIndex(n); setLightbox(wings[n].image); };
 
   return (
+    <>
+      <PageSEO
+        title="School Assembly Baihar | Morning Assembly Best School in Balaghat - Little Kingdom School"
+        description="Morning school assembly at Little Kingdom School Baihar - Best school assembly in Baihar and Balaghat district. Junior wing and senior wing assembly with prayer, discipline, national anthem. School assembly Baihar Balaghat MP. Best school discipline Baihar."
+        keywords="school assembly Baihar, morning assembly Balaghat, school prayer Baihar, best school discipline Baihar, school assembly Balaghat district, morning assembly school Baihar MP, junior wing assembly Baihar, senior wing assembly Balaghat, school discipline Baihar, best school assembly Balaghat, Little Kingdom assembly"
+      />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 
       {/* ── LIGHTBOX ── */}
@@ -183,6 +190,7 @@ const SchoolAssemblyPage = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

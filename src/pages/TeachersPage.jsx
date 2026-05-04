@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const TeachersPage = () => {
   useEffect(() => {
@@ -65,6 +66,12 @@ const TeachersPage = () => {
   ];
 
   return (
+    <>
+      <PageSEO
+        title="Teachers & Faculty | Little Kingdom School Baihar - Best Teachers in Balaghat District"
+        description="Meet the experienced teachers and faculty of Little Kingdom Senior Secondary School Baihar. Best teaching staff in Baihar and Balaghat district Madhya Pradesh. Qualified teachers for Science, Maths, Computer, English. Best school faculty Baihar MP."
+        keywords="teachers Baihar school, best teachers Balaghat, school faculty Baihar, teaching staff Baihar MP, science teacher Baihar, maths teacher Balaghat, computer teacher Baihar, Little Kingdom School teachers, school staff Baihar, best faculty Balaghat district, experienced teachers Baihar Madhya Pradesh"
+      />
     <div className="bg-gray-50 min-h-screen pb-16 sm:pb-24">
       {/* Header Banner */}
       <div className="bg-deepblue py-12 sm:py-20 relative overflow-hidden">
@@ -131,6 +138,7 @@ const TeachersPage = () => {
       </div>
       
     </div>
+    </>
   );
 };
 

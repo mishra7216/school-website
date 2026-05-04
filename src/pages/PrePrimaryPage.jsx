@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft, Star, Heart, Sun, Smile, Palette, Music, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const PrePrimaryPage = () => {
   // Ensure the page loads at the top
@@ -29,6 +30,12 @@ const PrePrimaryPage = () => {
   const prevSlide = () => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
 
   return (
+    <>
+      <PageSEO
+        title="Best Kindergarten & Pre-Primary in Baihar | Nursery School Balaghat - Little Kingdom School"
+        description="Best kindergarten in Baihar - Best pre-primary school in Balaghat district. Nursery, LKG, UKG admission at Little Kingdom School Baihar MP. Best nursery school Baihar. Pre-primary education Balaghat. Kindergarten wing Baihar. Best playschool Balaghat district Madhya Pradesh."
+        keywords="kindergarten Baihar, pre-primary Baihar, nursery school Baihar, best kindergarten Balaghat, pre-primary school Balaghat, nursery admission Baihar, LKG UKG Baihar, best playschool Baihar, kindergarten Balaghat district, pre-primary education Baihar MP, best nursery Balaghat, playgroup Baihar, toddler school Baihar, kindergarten admission Balaghat"
+      />
     <div className="min-h-screen bg-[#FFFBF0] pb-24 overflow-hidden font-sans">
       
       {/* Playful Header Section */}
@@ -202,6 +209,7 @@ const PrePrimaryPage = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowLeft, X, Palette, Music, Camera, Star, Heart, Sparkles, Quote } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
 
 const images = [
   { id: 9,  url: '/9.jpg' },
@@ -40,6 +41,12 @@ const ArtEventGalleryPage = () => {
   const next = (e) => { e.stopPropagation(); const n = (lightboxIndex + 1) % images.length; setLightboxIndex(n); setLightbox(images[n].url); };
 
   return (
+    <>
+      <PageSEO
+        title="Art & Cultural Events Baihar | School Arts Gallery Balaghat District - Little Kingdom School"
+        description="Art and cultural events at Little Kingdom School Baihar. Best school arts and cultural activities in Baihar and Balaghat district MP. Painting, dance, music, drama, creative arts. School art gallery Baihar. Cultural activities Balaghat. Best arts school Baihar Madhya Pradesh."
+        keywords="art event Baihar, cultural activities Balaghat, school arts Baihar, painting competition Balaghat, school art gallery Baihar, dance music school Balaghat, creative arts Baihar school, cultural program Balaghat district, art competition Baihar, school cultural event Balaghat MP, Little Kingdom art event"
+      />
     <div className="min-h-screen font-sans" style={{ background: '#0D0B1E' }}>
 
       {/* ── LIGHTBOX ── */}
@@ -249,6 +256,7 @@ const ArtEventGalleryPage = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
