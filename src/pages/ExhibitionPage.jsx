@@ -54,6 +54,7 @@ const ExhibitionPage = () => {
         title="Science & Innovation Exhibition Baihar | School Exhibition Balaghat District - Little Kingdom School"
         description="Science and Innovation Exhibition at Little Kingdom School Baihar. Best school exhibition in Baihar and Balaghat district MP. Student science projects, technology innovation, creative arts display. School science fair Baihar. Exhibition Balaghat school."
         keywords="science exhibition Baihar, school exhibition Balaghat, innovation fair Baihar school, science project school Baihar, school science fair Balaghat, exhibition Baihar MP, technology exhibition school Baihar, student projects Balaghat, school expo Baihar, creative exhibition Balaghat district, Little Kingdom exhibition"
+        canonicalUrl="https://www.littlekingdombaihar.in/exhibition"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 

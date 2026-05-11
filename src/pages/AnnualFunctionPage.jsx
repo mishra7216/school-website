@@ -41,6 +41,7 @@ const AnnualFunctionPage = () => {
         title="Annual Function Baihar | Biggest School Cultural Fest in Balaghat District - Little Kingdom School"
         description="Annual Function at Little Kingdom School Baihar - Biggest school cultural event in Baihar and Balaghat district Madhya Pradesh. Grand stage performances, dance, drama, music. Annual day celebration Baihar. School cultural fest Balaghat. Best annual function MP."
         keywords="annual function Baihar, school cultural event Balaghat, annual day Baihar school, cultural fest Baihar, school event Balaghat district, annual function Balaghat, school celebration Baihar MP, dance performance Baihar school, drama school Baihar, biggest school event Balaghat, Little Kingdom annual function"
+        canonicalUrl="https://www.littlekingdombaihar.in/gallery/annual-function"
       />
     <div className="bg-[#050B14] min-h-screen text-gray-200 font-sans selection:bg-[#D4AF37]/30 selection:text-[#FFF]">
       

@@ -32,6 +32,7 @@ const ComputerLabPage = () => {
         title="Computer Lab & Smart Classroom Baihar | Best School Technology Balaghat - Little Kingdom School"
         description="Best computer lab in Baihar - Smart classroom with digital board at Little Kingdom School. Best school technology in Balaghat district MP. Modern computer lab Baihar. Smart class Balaghat. Digital learning Baihar. School computer education Balaghat district Madhya Pradesh."
         keywords="computer lab Baihar, smart classroom Balaghat, school computer lab Baihar, digital board school Balaghat, smart class Baihar, computer education Baihar school, school technology Balaghat district, computer lab Baihar MP, digital learning Baihar, smart classroom school Balaghat, Little Kingdom computer lab"
+        canonicalUrl="https://www.littlekingdombaihar.in/computer-lab"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 

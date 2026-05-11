@@ -46,6 +46,7 @@ const ArtEventGalleryPage = () => {
         title="Art & Cultural Events Baihar | School Arts Gallery Balaghat District - Little Kingdom School"
         description="Art and cultural events at Little Kingdom School Baihar. Best school arts and cultural activities in Baihar and Balaghat district MP. Painting, dance, music, drama, creative arts. School art gallery Baihar. Cultural activities Balaghat. Best arts school Baihar Madhya Pradesh."
         keywords="art event Baihar, cultural activities Balaghat, school arts Baihar, painting competition Balaghat, school art gallery Baihar, dance music school Balaghat, creative arts Baihar school, cultural program Balaghat district, art competition Baihar, school cultural event Balaghat MP, Little Kingdom art event"
+        canonicalUrl="https://www.littlekingdombaihar.in/art-event-gallery"
       />
     <div className="min-h-screen font-sans" style={{ background: '#0D0B1E' }}>
 

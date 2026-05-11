@@ -31,6 +31,7 @@ const PlaygroundPage = () => {
         title="Sports Facilities & Playground Baihar | Best Sports School in Balaghat - Little Kingdom School"
         description="Best sports facilities in Baihar - School playground, cricket ground, kabaddi hall, athletics track at Little Kingdom School. Best sports school in Balaghat district Madhya Pradesh. Indoor and outdoor sports Baihar. School sports infrastructure Balaghat MP."
         keywords="sports facilities Baihar, school playground Balaghat, cricket ground school Baihar, kabaddi hall Baihar, athletics track school Balaghat, best sports school Baihar, school sports Balaghat district, indoor sports Baihar, outdoor sports school Balaghat, table tennis school Baihar, school playground Baihar MP, sports infrastructure Balaghat"
+        canonicalUrl="https://www.littlekingdombaihar.in/gallery/playground"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 

@@ -37,6 +37,7 @@ const AcademicResultPage = () => {
         title="Board Results & District Toppers Baihar | Best School Results Balaghat - Little Kingdom School"
         description="Board exam results at Little Kingdom School Baihar - District toppers from Baihar Balaghat. MPBSE Class 10 and Class 8 board results. Best school results in Baihar and Balaghat district MP. Academic excellence Baihar. District topper Balaghat. Best results school Baihar Madhya Pradesh."
         keywords="board results Baihar, district topper Balaghat, MPBSE results Baihar school, Class 10 results Baihar, Class 8 results Balaghat, best school results Baihar, academic results Balaghat district, board exam Baihar, school topper Baihar, best results school Balaghat MP, Little Kingdom results, academic excellence Baihar"
+        canonicalUrl="https://www.littlekingdombaihar.in/academic-results"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
 

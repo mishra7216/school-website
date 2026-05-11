@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 /**
- * PageSEO - Sets unique page-level title, meta description, and JSON-LD structured data
- * for each page to maximize Google Images and Search ranking.
+ * PageSEO - Sets unique page-level title, meta description, canonical URL,
+ * and JSON-LD structured data for each page to maximize Google ranking.
  */
-const PageSEO = ({ title, description, keywords, jsonLd }) => {
+const PageSEO = ({ title, description, keywords, jsonLd, canonicalUrl }) => {
   useEffect(() => {
     // Set page title
     document.title = title;
@@ -38,6 +38,25 @@ const PageSEO = ({ title, description, keywords, jsonLd }) => {
     let ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', description);
 
+    // Set or update canonical URL
+    if (canonicalUrl) {
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        canonical.setAttribute('href', canonicalUrl);
+      } else {
+        canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        canonical.href = canonicalUrl;
+        document.head.appendChild(canonical);
+      }
+
+      // Also update og:url to match canonical
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) {
+        ogUrl.setAttribute('content', canonicalUrl);
+      }
+    }
+
     // Inject page-specific JSON-LD structured data
     let scriptTag = document.getElementById('page-jsonld');
     if (jsonLd) {
@@ -53,11 +72,21 @@ const PageSEO = ({ title, description, keywords, jsonLd }) => {
     // Cleanup on unmount - restore defaults
     return () => {
       document.title = 'Little Kingdom Senior Secondary School, Baihar | Best School in Balaghat District';
+      // Restore canonical to homepage
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        canonical.setAttribute('href', 'https://www.littlekingdombaihar.in');
+      }
+      // Restore og:url to homepage
+      let ogUrl = document.querySelector('meta[property="og:url"]');
+      if (ogUrl) {
+        ogUrl.setAttribute('content', 'https://www.littlekingdombaihar.in');
+      }
       if (scriptTag) {
         scriptTag.remove();
       }
     };
-  }, [title, description, keywords, jsonLd]);
+  }, [title, description, keywords, jsonLd, canonicalUrl]);
 
   return null; // This component renders nothing
 };

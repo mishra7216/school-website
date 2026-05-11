@@ -35,6 +35,7 @@ const PrePrimaryPage = () => {
         title="Best Kindergarten & Pre-Primary in Baihar | Nursery School Balaghat - Little Kingdom School"
         description="Best kindergarten in Baihar - Best pre-primary school in Balaghat district. Nursery, LKG, UKG admission at Little Kingdom School Baihar MP. Best nursery school Baihar. Pre-primary education Balaghat. Kindergarten wing Baihar. Best playschool Balaghat district Madhya Pradesh."
         keywords="kindergarten Baihar, pre-primary Baihar, nursery school Baihar, best kindergarten Balaghat, pre-primary school Balaghat, nursery admission Baihar, LKG UKG Baihar, best playschool Baihar, kindergarten Balaghat district, pre-primary education Baihar MP, best nursery Balaghat, playgroup Baihar, toddler school Baihar, kindergarten admission Balaghat"
+        canonicalUrl="https://www.littlekingdombaihar.in/gallery/pre-primary-wing"
       />
     <div className="min-h-screen bg-[#FFFBF0] pb-24 overflow-hidden font-sans">
       

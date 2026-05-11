@@ -85,6 +85,7 @@ const RepublicDayPage = () => {
         title="Republic Day Baihar - 5 Consecutive First Prizes | Best School Dance Competition Balaghat - Little Kingdom School"
         description="Republic Day at Little Kingdom School Baihar - 5 consecutive first prizes in inter-school dance competition Baihar Balaghat. Best patriotic performance school Baihar. Republic Day celebration Balaghat district. Dance competition winner Baihar MP. Best school Baihar Balaghat."
         keywords="Republic Day Baihar, Republic Day school Balaghat, dance competition Baihar, inter-school competition Balaghat, first prize Baihar school, patriotic dance Baihar, Republic Day celebration Balaghat, school competition Baihar MP, dance performance Balaghat district, Republic Day winner Baihar, Little Kingdom Republic Day"
+        canonicalUrl="https://www.littlekingdombaihar.in/republic-day"
       />
     <div className="min-h-screen font-sans" style={{ background: 'linear-gradient(180deg, #0C1A0E 0%, #0F1B12 40%, #0A1208 100%)' }}>
 

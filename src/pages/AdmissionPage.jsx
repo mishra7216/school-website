@@ -112,6 +112,7 @@ const AdmissionPage = () => {
         title="Admissions Open 2026-27 | Little Kingdom School Baihar - Best School in Balaghat District"
         description="Admissions open at Little Kingdom Senior Secondary School Baihar for 2026-27. Best school admission in Baihar and Balaghat district MP. Nursery to Class 12 admission. Best kindergarten admission Baihar. Pre-primary admission Balaghat. Apply now for quality education."
         keywords="admission Baihar school, school admission Balaghat, enrollment Baihar school 2026, nursery admission Baihar, kindergarten admission Baihar, pre-primary admission Balaghat, class 1 admission Baihar, best school admission Balaghat district, Little Kingdom admission, LKPS admission Baihar, school fees Baihar, admission form Baihar school"
+        canonicalUrl="https://www.littlekingdombaihar.in/admissions"
       />
     <div className="min-h-screen bg-[#F5F3FF] font-sans">
 

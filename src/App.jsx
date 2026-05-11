@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import AnnouncementBar from './components/AnnouncementBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -42,6 +42,7 @@ function App() {
             <Route path="/computer-lab" element={<ComputerLabPage />} />
             <Route path="/republic-day" element={<RepublicDayPage />} />
             <Route path="/gallery/:id" element={<GalleryDetail />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />
