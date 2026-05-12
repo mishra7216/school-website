@@ -1,8 +1,5 @@
 {
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/:path*/", "destination": "/:path*", "statusCode": 301 }
-  ],
   "rewrites": [
     { "source": "/((?!.*\\.(?:js|css|json|ico|png|jpg|jpeg|webp|svg|gif|pdf|xml|txt|JPG|woff|woff2|ttf|eot)$).*)", "destination": "/index.html" }
   ],
