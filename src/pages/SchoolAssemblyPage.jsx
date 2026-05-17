@@ -13,7 +13,7 @@ const wings = [
   {
     label: 'Senior Wing — I',
     image: '/schoolassemblyseniorwing(1).jpeg',
-    alt: 'Best School Assembly Baihar Balaghat - Senior Wing Morning Assembly - Little Kingdom School Baihar Discipline',
+    alt: 'Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat - Best School Building in Balaghat District Madhya Pradesh - Top School Baihar MP',
     description: 'Senior students lead by example, conducting assembly with discipline, purpose, and pride that inspires the entire school.',
   },
   {
@@ -45,9 +45,9 @@ const SchoolAssemblyPage = () => {
   return (
     <>
       <PageSEO
-        title="School Assembly Baihar | Morning Assembly Best School in Balaghat - Little Kingdom School"
-        description="Morning school assembly at Little Kingdom School Baihar - Best school assembly in Baihar and Balaghat district. Junior wing and senior wing assembly with prayer, discipline, national anthem. School assembly Baihar Balaghat MP. Best school discipline Baihar."
-        keywords="school assembly Baihar, morning assembly Balaghat, school prayer Baihar, best school discipline Baihar, school assembly Balaghat district, morning assembly school Baihar MP, junior wing assembly Baihar, senior wing assembly Balaghat, school discipline Baihar, best school assembly Balaghat, Little Kingdom assembly"
+        title="Best School in Baihar | School Building - Little Kingdom Senior Secondary School Balaghat"
+        description="Little Kingdom Senior Secondary School Baihar - Best school in Baihar and Balaghat district. View our school building, campus, morning assembly. Best school building in Baihar Madhya Pradesh. Top school in Balaghat district with modern infrastructure."
+        keywords="best school in Baihar, school building Baihar, best school Balaghat, school building Balaghat, best school in Balaghat district, top school Baihar, Little Kingdom School building, school campus Baihar, school assembly Baihar, morning assembly Balaghat, best school Baihar MP, school building Baihar MP, Little Kingdom Senior Secondary School"
         canonicalUrl="https://www.littlekingdombaihar.in/school-assembly"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
@@ -58,7 +58,7 @@ const SchoolAssemblyPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="School Assembly at Little Kingdom Senior Secondary School Baihar" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat District" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{wings[lightboxIndex].label}</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={next}>›</button>
@@ -152,7 +152,7 @@ const SchoolAssemblyPage = () => {
                   <img
                     src={wing.image}
                     alt={wing.alt || wing.label + ' Assembly at Little Kingdom School Baihar'}
-                    title={wing.label + ' - School Assembly at Little Kingdom School Baihar'}
+                    title={wing.image.includes('seniorwing(1)') ? 'Best School in Baihar - Little Kingdom School Building - Best School in Balaghat District' : wing.label + ' - School Assembly at Little Kingdom School Baihar'}
                     className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-deepblue/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
