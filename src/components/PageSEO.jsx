@@ -38,22 +38,25 @@ const PageSEO = ({ title, description, keywords, jsonLd, canonicalUrl }) => {
     let ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc) ogDesc.setAttribute('content', description);
 
-    // Set or update canonical URL
-    if (canonicalUrl) {
+    // Set or update canonical URL (normalize: strip trailing slash except root)
+    const normalizedCanonical = canonicalUrl
+      ? canonicalUrl.replace(/\/+$/, '') || canonicalUrl
+      : null;
+    if (normalizedCanonical) {
       let canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) {
-        canonical.setAttribute('href', canonicalUrl);
+        canonical.setAttribute('href', normalizedCanonical);
       } else {
         canonical = document.createElement('link');
         canonical.rel = 'canonical';
-        canonical.href = canonicalUrl;
+        canonical.href = normalizedCanonical;
         document.head.appendChild(canonical);
       }
 
       // Also update og:url to match canonical
       let ogUrl = document.querySelector('meta[property="og:url"]');
       if (ogUrl) {
-        ogUrl.setAttribute('content', canonicalUrl);
+        ogUrl.setAttribute('content', normalizedCanonical);
       }
     }
 
