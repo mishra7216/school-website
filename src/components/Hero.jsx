@@ -58,6 +58,12 @@ const Hero = () => {
             Apply Now <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
+            to="/gallery/pre-primary-wing"
+            className="flex items-center gap-2 bg-primary/90 hover:bg-primary backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-sm sm:text-base shadow-[0_8px_30px_rgba(107,70,193,0.3)] transition-all duration-300 transform hover:-translate-y-1"
+          >
+            Kindergarten
+          </Link>
+          <Link
             to="/about"
             className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border border-white/30 px-8 py-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300"
           >
