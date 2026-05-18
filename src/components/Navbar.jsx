@@ -60,6 +60,12 @@ const Navbar = () => {
                     <p className="text-gray-500 text-xs mt-1 leading-snug">Science, art & innovation projects by our students</p>
                   </div>
                   <div className="px-4 py-3 hover:bg-lightblue/30 transition-colors">
+                    <Link to="/gallery/pre-primary-wing" className="block text-primary font-bold text-sm tracking-wide">
+                      Kindergarten
+                    </Link>
+                    <p className="text-gray-500 text-xs mt-1 leading-snug">Joyful learning in our pre-primary wing</p>
+                  </div>
+                  <div className="px-4 py-3 hover:bg-lightblue/30 transition-colors">
                     <Link to="/art-event-gallery" className="block text-primary font-bold text-sm tracking-wide">
                       Art &amp; Event Gallery
                     </Link>
@@ -134,6 +140,9 @@ const Navbar = () => {
                   </Link>
                   <Link to="/exhibition" onClick={() => setIsOpen(false)} className="block px-4 py-4 text-sm font-bold text-primary rounded-xl bg-white shadow-sm border border-gray-100 hover:border-primary/50 transition-all text-center">
                     Annual Exhibition
+                  </Link>
+                  <Link to="/gallery/pre-primary-wing" onClick={() => setIsOpen(false)} className="block px-4 py-4 text-sm font-bold text-primary rounded-xl bg-white shadow-sm border border-gray-100 hover:border-primary/50 transition-all text-center">
+                    Kindergarten
                   </Link>
                   <Link to="/art-event-gallery" onClick={() => setIsOpen(false)} className="block px-4 py-4 text-sm font-bold text-primary rounded-xl bg-white shadow-sm border border-gray-100 hover:border-primary/50 transition-all text-center">
                     Art &amp; Event Gallery
