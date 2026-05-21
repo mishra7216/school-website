@@ -19,7 +19,7 @@ const wings = [
   {
     label: 'Senior Wing — II',
     image: '/schoolassemblyseniorwing(2).jpeg',
-    alt: 'School Assembly Baihar - Students and Teachers United - Best School in Balaghat District - Little Kingdom School',
+    alt: 'School Assembly Baihar - Students and Teachers United - Best School in Balaghat District - Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
     description: 'A moment of unity — students and teachers stand together, reinforcing the values of respect, responsibility, and excellence.',
   },
 ];

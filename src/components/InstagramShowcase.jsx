@@ -17,8 +17,8 @@ const POST_SHORTCODES = [
 const fallbackPosts = [
   { id: 1, image: '/annual-function-1.JPG', alt: 'Annual Function Stage Performance - Little Kingdom School Baihar Instagram', caption: '🎭 Grand Annual Function 2025', likes: 234, category: 'Events' },
   { id: 2, image: '/republicday2025firstprize.jpeg', alt: 'Republic Day First Prize - Little Kingdom School Baihar Instagram', caption: '🏆 5th Consecutive 1st Prize!', likes: 412, category: 'Achievement' },
-  { id: 4, image: '/playground-1.jpg', alt: 'Sports Playground - Little Kingdom School Baihar Instagram', caption: '⚽ Sports Day Vibes', likes: 156, category: 'Sports' },
-  { id: 5, image: '/gallery-2.jpg', alt: 'Cultural Celebration - Little Kingdom School Baihar Instagram', caption: '✨ Cultural Celebration 2025', likes: 298, category: 'Events' },
+  { id: 4, image: '/playground-1.jpg', alt: 'Sports Playground - Little Kingdom School Baihar Instagram - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल', caption: '⚽ Sports Day Vibes', likes: 156, category: 'Sports' },
+  { id: 5, image: '/gallery-2.jpg', alt: 'Cultural Celebration - Little Kingdom School Baihar Instagram - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल', caption: '✨ Cultural Celebration 2025', likes: 298, category: 'Events' },
   { id: 6, image: '/9.jpg', alt: 'Art and Culture Event - Little Kingdom School Baihar Instagram', caption: '🎨 Creativity Unleashed', likes: 175, category: 'Arts' },
 ];
 

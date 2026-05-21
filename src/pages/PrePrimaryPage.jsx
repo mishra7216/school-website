@@ -111,7 +111,7 @@ const PrePrimaryPage = () => {
              <div className="absolute inset-0 bg-[#FF6B6B]/20 rounded-full blur-xl transform translate-x-3 translate-y-3"></div>
              <img 
                src="/Kindergarten%20Head.jpeg" 
-               alt="Mrs Asna Qureshi - Best Kindergarten Head in Baihar - Nursery School Teacher Balaghat - Little Kingdom School Pre-Primary" 
+               alt="Mrs Asna Qureshi - Best Kindergarten Head in Baihar - Nursery School Teacher Balaghat - Little Kingdom School Pre-Primary - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
                title="Mrs Asna Qureshi - Kindergarten Head - Best Nursery School Baihar Balaghat" 
                className="relative w-full h-full object-cover rounded-full border-[8px] border-white shadow-lg bg-gray-100 transform group-hover:-rotate-3 group-hover:scale-105 transition-all duration-300"
              />

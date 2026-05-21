@@ -42,7 +42,7 @@ const ComputerLabPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Technology facilities at Little Kingdom Senior Secondary School Baihar" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Technology facilities at Little Kingdom Senior Secondary School Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{photos[lightboxIndex].label}</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={next}>›</button>

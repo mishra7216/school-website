@@ -13,25 +13,25 @@ const AnnualFunctionPage = () => {
 
   // 9 High-Quality Event Placeholders designed for an interlocking Grid
   const images = [
-    { id: 1, url: "/annual-function-1.JPG", span: "col-span-2 row-span-2", alt: "Annual Function Baihar - Best School Cultural Event in Balaghat District - Little Kingdom School Stage Performance" },
-    { id: 2, url: "/annual-function-2.JPG", span: "col-span-1 row-span-1", alt: "School Annual Function Baihar Balaghat - Cultural Dance Performance - Little Kingdom School LKPS" },
+    { id: 1, url: "/annual-function-1.JPG", span: "col-span-2 row-span-2", alt: "Annual Function Baihar - Best School Cultural Event in Balaghat District - Little Kingdom School Stage Performance - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
+    { id: 2, url: "/annual-function-2.JPG", span: "col-span-1 row-span-1", alt: "School Annual Function Baihar Balaghat - Cultural Dance Performance - Little Kingdom School LKPS - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 3, url: "/annual-function-3.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Baihar - Group Dance Performance - Best School Event in Balaghat - Little Kingdom School" },
-    { id: 4, url: "/annual-function-4.JPG", span: "col-span-1 row-span-2", alt: "School Drama Performance Baihar - Annual Cultural Fest Balaghat - Little Kingdom School Annual Function" },
+    { id: 4, url: "/annual-function-4.JPG", span: "col-span-1 row-span-2", alt: "School Drama Performance Baihar - Annual Cultural Fest Balaghat - Little Kingdom School Annual Function - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 5, url: "/annual-function-5.JPG", span: "col-span-1 row-span-1", alt: "Student Talent Show Baihar - Best School Annual Function Balaghat - LKPS Baihar Cultural Event" },
-    { id: 6, url: "/annual-function-6.JPG", span: "col-span-1 row-span-1", alt: "Biggest Annual Function in Baihar District - School Cultural Celebration Balaghat - Little Kingdom School" },
+    { id: 6, url: "/annual-function-6.JPG", span: "col-span-1 row-span-1", alt: "Biggest Annual Function in Baihar District - School Cultural Celebration Balaghat - Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 7, url: "/annual-function-7.JPG", span: "col-span-2 row-span-1", alt: "School Music Performance Baihar - Annual Function Balaghat - Best Cultural Event - Little Kingdom School" },
-    { id: 8, url: "/annual-function-8.JPG", span: "col-span-1 row-span-1", alt: "Prize Distribution Baihar School - Annual Function Awards Balaghat - Little Kingdom School LKPS" },
+    { id: 8, url: "/annual-function-8.JPG", span: "col-span-1 row-span-1", alt: "Prize Distribution Baihar School - Annual Function Awards Balaghat - Little Kingdom School LKPS - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 9, url: "/annual-function-9.JPG", span: "col-span-1 row-span-1", alt: "Dance Performance Baihar - School Annual Day Balaghat District - Little Kingdom School Annual Function" },
     { id: 10, url: "/annual-function-10.JPG", span: "col-span-2 row-span-2", alt: "Best School Annual Function Baihar Balaghat - Grand Stage Show - Little Kingdom School Biggest Fest" },
     { id: 11, url: "/annual-function-11.JPG", span: "col-span-1 row-span-1", alt: "Students Stage Performance Baihar - School Cultural Event Balaghat - Little Kingdom School Annual Day" },
-    { id: 12, url: "/annual-function-12.JPG", span: "col-span-1 row-span-2", alt: "Colorful Annual Function Baihar - School Event Balaghat District - Little Kingdom School Performance" },
+    { id: 12, url: "/annual-function-12.JPG", span: "col-span-1 row-span-2", alt: "Colorful Annual Function Baihar - School Event Balaghat District - Little Kingdom School Performance - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 13, url: "/annual-function-13.jpg", span: "col-span-1 row-span-1", alt: "Cultural Program Baihar School - Annual Function Balaghat - Little Kingdom School Event" },
     { id: 14, url: "/annual-function-14.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Highlights Baihar - Best School Event in Balaghat - Little Kingdom Senior Secondary School" },
-    { id: 15, url: "/annual-function-15.JPG", span: "col-span-2 row-span-1", alt: "Grand Finale Annual Function Baihar Balaghat - Little Kingdom School - Biggest School Fest in District" },
-    { id: 16, url: "/annual-function-16.JPG", span: "col-span-1 row-span-1", alt: "Student Performance Baihar School - Annual Cultural Event Balaghat - LKPS Annual Function" },
+    { id: 15, url: "/annual-function-15.JPG", span: "col-span-2 row-span-1", alt: "Grand Finale Annual Function Baihar Balaghat - Little Kingdom School - Biggest School Fest in District - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
+    { id: 16, url: "/annual-function-16.JPG", span: "col-span-1 row-span-1", alt: "Student Performance Baihar School - Annual Cultural Event Balaghat - LKPS Annual Function - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 17, url: "/annual-function-17.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Celebration Baihar - Best School in Balaghat - Little Kingdom Public School Event" },
     { id: 18, url: "/annual-function-18.JPG", span: "col-span-1 row-span-2", alt: "Stage Decoration Annual Function Baihar - School Event Balaghat District - LKPS Annual Function" },
-    { id: 19, url: "/annual-function-19.JPG", span: "col-span-2 row-span-1", alt: "Group Dance Annual Function Baihar - Biggest School Fest Balaghat District - Little Kingdom School" },
+    { id: 19, url: "/annual-function-19.JPG", span: "col-span-2 row-span-1", alt: "Group Dance Annual Function Baihar - Biggest School Fest Balaghat District - Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { id: 20, url: "/annual-function-20.JPG", span: "col-span-1 row-span-1", alt: "Annual Function Baihar School - Closing Ceremony Balaghat - Little Kingdom School Cultural Fest" }
   ];
 
@@ -56,7 +56,7 @@ const AnnualFunctionPage = () => {
           </button>
           <img 
             src={lightboxImage} 
-            alt="Annual Function performance at Little Kingdom Senior Secondary School Baihar" 
+            alt="Annual Function performance at Little Kingdom Senior Secondary School Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
             className="max-w-[95%] max-h-[90vh] object-contain rounded-xl shadow-[0_0_50px_rgba(212,175,55,0.15)] animate-in zoom-in-95 duration-300"
           />
         </div>
