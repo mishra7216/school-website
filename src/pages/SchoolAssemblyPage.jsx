@@ -13,7 +13,7 @@ const wings = [
   {
     label: 'Senior Wing — I',
     image: '/schoolassemblyseniorwing(1).jpeg',
-    alt: 'Best School in Balaghat District - Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat - Top School Baihar MP',
+    alt: 'Best School in Balaghat District - Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat - Top School Baihar MP - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
     description: 'Senior students lead by example, conducting assembly with discipline, purpose, and pride that inspires the entire school.',
   },
   {
@@ -46,8 +46,8 @@ const SchoolAssemblyPage = () => {
     <>
       <PageSEO
         title="Best School in Balaghat & Best School in Baihar | School Building - Little Kingdom Senior Secondary School"
-        description="Little Kingdom Senior Secondary School - Best school in Balaghat district and best school in Baihar. View our school building, campus, morning assembly. Best school building in Balaghat Madhya Pradesh. Top school in Balaghat district with modern infrastructure."
-        keywords="best school in Balaghat, best school in Baihar, school building Balaghat, school building Baihar, best school in Balaghat district, top school Balaghat, top school Baihar, Little Kingdom School building, school campus Balaghat, school assembly Baihar, morning assembly Balaghat, best school Balaghat MP, best school Baihar MP"
+        description="Little Kingdom Senior Secondary School - Best school in Balaghat district and best school in Baihar. View our school building, campus, morning assembly. Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल."
+        keywords="best school in Balaghat, best school in Baihar, school building Balaghat, school building Baihar, best school in Balaghat district, top school Balaghat, top school Baihar, baihar ka sabse acha school, balaghat ka sabse acha school, बैहर का सबसे अच्छा स्कूल, बालाघाट का सबसे अच्छा स्कूल, Little Kingdom School building, school campus Balaghat, school assembly Baihar, morning assembly Balaghat, best school Balaghat MP, best school Baihar MP"
         canonicalUrl="https://www.littlekingdombaihar.in/school-assembly"
       />
     <div className="min-h-screen bg-[#FAFAFC] font-sans">
@@ -58,7 +58,7 @@ const SchoolAssemblyPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Best School in Balaghat - Best School in Baihar - Little Kingdom Senior Secondary School Building Balaghat District" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Best School in Balaghat - Best School in Baihar - Little Kingdom Senior Secondary School Building Balaghat District - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{wings[lightboxIndex].label}</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={next}>›</button>
@@ -152,7 +152,7 @@ const SchoolAssemblyPage = () => {
                   <img
                     src={wing.image}
                     alt={wing.alt || wing.label + ' Assembly at Little Kingdom School Baihar'}
-                    title={wing.image.includes('seniorwing(1)') ? 'Best School in Balaghat - Best School in Baihar - Little Kingdom School Building - Best School in Balaghat District' : wing.label + ' - School Assembly at Little Kingdom School Baihar'}
+                    title={wing.image.includes('seniorwing(1)') ? 'Best School in Balaghat - Best School in Baihar - Little Kingdom School Building - Best School in Balaghat District - Baihar ka sabse acha school - Balaghat ka sabse acha school' : wing.label + ' - School Assembly at Little Kingdom School Baihar'}
                     className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-deepblue/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

@@ -12,10 +12,10 @@ const PrePrimaryPage = () => {
   // Carousel State and Logic
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten in Baihar - Nursery School Balaghat - Joyful Playtime at Little Kingdom School Pre-Primary Wing Baihar" },
-    { url: "/kindergarten-banner-2.jpg", caption: "Creative Arts", alt: "Best School in Balaghat - Best School in Baihar - Best Pre-Primary School in Baihar Balaghat - Creative Arts Kindergarten - Little Kingdom School Nursery Wing" },
-    { url: "/kindergarten-banner-3.jpg", caption: "Learning Together", alt: "Best School in Balaghat - Best School in Baihar - Top Kindergarten Baihar - Best Nursery School in Balaghat District - Children Learning at Little Kingdom School" },
-    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten Outdoor Activities Baihar - Pre-Primary School Balaghat - Little Kingdom School Kindergarten" }
+    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten in Baihar - Nursery School Balaghat - Joyful Playtime at Little Kingdom School Pre-Primary Wing Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
+    { url: "/kindergarten-banner-2.jpg", caption: "Creative Arts", alt: "Best School in Balaghat - Best School in Baihar - Best Pre-Primary School in Baihar Balaghat - Creative Arts Kindergarten - Little Kingdom School Nursery Wing - Baihar ka sabse acha school - Balaghat ka sabse acha school" },
+    { url: "/kindergarten-banner-3.jpg", caption: "Learning Together", alt: "Best School in Balaghat - Best School in Baihar - Top Kindergarten Baihar - Best Nursery School in Balaghat District - Children Learning at Little Kingdom School - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
+    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten Outdoor Activities Baihar - Pre-Primary School Balaghat - Little Kingdom School Kindergarten - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" }
   ];
 
   // Auto-play the carousel every 4 seconds

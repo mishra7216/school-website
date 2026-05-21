@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import PageSEO from '../components/PageSEO';
 
 const photos = [
-  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab', alt: 'Best School in Balaghat - Best School in Baihar - Best Computer Lab in Baihar - School Computer Lab Balaghat - Little Kingdom School Technology Lab' },
-  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom', alt: 'Best School in Balaghat - Best School in Baihar - Best Smart Classroom in Baihar - Digital Board School Balaghat - Little Kingdom School Smart Class' },
+  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab', alt: 'Best School in Balaghat - Best School in Baihar - Best Computer Lab in Baihar - School Computer Lab Balaghat - Little Kingdom School Technology Lab - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
+  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom', alt: 'Best School in Balaghat - Best School in Baihar - Best Smart Classroom in Baihar - Digital Board School Balaghat - Little Kingdom School Smart Class - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल' },
 ];
 
 const features = [
