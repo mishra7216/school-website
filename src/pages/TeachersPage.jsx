@@ -18,7 +18,7 @@ const TeachersPage = () => {
     {
       name: "Mrs. Asna Qureshi",
       designation: "Kindergarten Head",
-      image: "/Kindergarten Head.jpeg",
+      image: "/KindergartenHead.jpeg",
       subject: "Early Childhood Education"
     },
     {

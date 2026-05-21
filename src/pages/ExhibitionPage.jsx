@@ -91,7 +91,7 @@ const ExhibitionPage = () => {
       <div className="relative h-[70vh] min-h-[480px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-[8s]"
-          style={{ backgroundImage: "url('/exhibition-hero.jpg'), url('/exhibition-1.jpg')" }}
+          style={{ backgroundImage: "url('/exhibition-2.jpg'), url('/exhibition-1.jpg')" }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-deepblue/70 via-deepblue/50 to-deepblue/92"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-deepblue/55 via-transparent to-transparent"></div>

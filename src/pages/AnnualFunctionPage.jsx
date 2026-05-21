@@ -67,7 +67,7 @@ const AnnualFunctionPage = () => {
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
-          style={{ backgroundImage: "url('/annual-function-hero.jpg')" }}
+          style={{ backgroundImage: "url('/annual-function-14.JPG')" }}
         ></div>
         
         {/* Deep Gradient Overlay */}
