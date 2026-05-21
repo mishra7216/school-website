@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import PageSEO from '../components/PageSEO';
 
 const photos = [
-  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab', alt: 'Best Computer Lab in Baihar - School Computer Lab Balaghat - Little Kingdom School Technology Lab Baihar MP' },
-  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom', alt: 'Best Smart Classroom in Baihar - Digital Board School Balaghat - Little Kingdom School Smart Class Baihar' },
+  { id: 1, url: '/computerlab1.jpeg', label: 'Computer Lab', alt: 'Best School in Baihar - Best Computer Lab in Baihar - School Computer Lab Balaghat - Little Kingdom School Technology Lab Baihar MP' },
+  { id: 2, url: '/smartclass1.jpeg', label: 'Smart Classroom', alt: 'Best School in Baihar - Best Smart Classroom in Baihar - Digital Board School Balaghat - Little Kingdom School Smart Class Baihar' },
 ];
 
 const features = [
