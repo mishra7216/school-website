@@ -55,7 +55,7 @@ const ArtEventGalleryPage = () => {
         <div className="fixed inset-0 z-[100] bg-black/97 flex items-center justify-center backdrop-blur-sm" onClick={() => setLightbox(null)}>
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl font-thin" onClick={prev}>‹</button>
-          <img src={lightbox} alt="Art and Cultural Event at Little Kingdom Senior Secondary School Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[85vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
+          <img src={lightbox} alt="Art and Cultural Event at Little Kingdom Senior Secondary School Baihar - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[85vh] object-contain rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()} />
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl font-thin" onClick={next}>›</button>
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/50 text-xs font-semibold tracking-[0.3em] uppercase">{lightboxIndex + 1} of {images.length}</div>
         </div>
@@ -166,7 +166,7 @@ const ArtEventGalleryPage = () => {
               <div className="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full border-4 overflow-hidden shadow-2xl" style={{ borderColor: 'rgba(236,72,153,0.5)' }}>
                 <img
                   src="/aleena-francis.jpg"
-                  alt="Mrs Aleena Francis - Best School Arts Teacher Baihar - Co-Curricular Head Balaghat - Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल"
+                  alt="Mrs Aleena Francis - Best School Arts Teacher Baihar - Co-Curricular Head Balaghat - Little Kingdom School - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल"
                   title="Mrs Aleena Francis - Arts and Culture Head - Best School in Baihar Balaghat"
                   className="w-full h-full object-cover object-center"
                   onError={(e) => {

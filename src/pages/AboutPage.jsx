@@ -74,7 +74,7 @@ const AboutPage = () => {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white mb-6 relative group">
               <img 
                 src="/director-photo.jpg" 
-                alt="Pravin Kumar Mishra - Director Best School in Baihar - Founder Little Kingdom School Balaghat District Madhya Pradesh - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
+                alt="Pravin Kumar Mishra - Director Best School in Baihar - Founder Little Kingdom School Balaghat District Madhya Pradesh - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
                 title="Pravin Kumar Mishra - Director of Best School in Baihar Balaghat"
                 className="w-full h-96 object-cover bg-gray-100 transform group-hover:scale-105 transition-transform duration-500" 
                 onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop' }} 
@@ -133,7 +133,7 @@ const AboutPage = () => {
                  <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl transform translate-x-4 translate-y-4"></div>
                  <img 
                     src="/principal-photo.jpg" 
-                    alt="Varsha Mishra - Principal Best School in Baihar - Little Kingdom School Balaghat - Top School Principal Baihar MP - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
+                    alt="Varsha Mishra - Principal Best School in Baihar - Little Kingdom School Balaghat - Top School Principal Baihar MP - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
                     title="Varsha Mishra - Principal of Best School in Baihar Balaghat"
                     className="relative w-full h-full object-cover rounded-full border-[6px] sm:border-[8px] border-white shadow-2xl bg-gray-100 transform group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop' }} 

@@ -12,7 +12,7 @@ const Hero = () => {
         style={{ backgroundImage: "url('/school-hero.jpg')" }}
       >
         {/* Hidden img tag for Google Images SEO — background-image is not crawlable */}
-        <img src="/school-hero.jpg" alt="Best School in Baihar - Little Kingdom Senior Secondary School Baihar Balaghat District Madhya Pradesh - Top School Baihar MP - Best School Balaghat - LKPS Baihar Campus - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" title="Best School in Baihar and Balaghat District - Little Kingdom Senior Secondary School" className="sr-only" width="1920" height="1080" loading="eager" />
+        <img src="/school-hero.jpg" alt="Best School in Baihar - Little Kingdom Senior Secondary School Baihar Balaghat District Madhya Pradesh - Top School Baihar MP - Best School Balaghat - LKPS Baihar Campus - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" title="Best School in Baihar and Balaghat District - Little Kingdom Senior Secondary School" className="sr-only" width="1920" height="1080" loading="eager" />
       </div>
 
       {/* ── Multi-layer Gradient Overlay ── */}

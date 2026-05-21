@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import PageSEO from '../components/PageSEO';
 
 const resultImages = [
-  { id: 1, url: '/result2023-24.webp', year: '2023–24', alt: 'Board Results 2023-24 Baihar - District Topper Balaghat - Best School Results Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
-  { id: 2, url: '/result2024-25.webp', year: '2024–25', alt: 'Board Results 2024-25 Baihar - Best School Results Balaghat District - Little Kingdom School Topper - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
+  { id: 1, url: '/result2023-24.webp', year: '2023–24', alt: 'Board Results 2023-24 Baihar - District Topper Balaghat - Best School Results Little Kingdom School - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
+  { id: 2, url: '/result2024-25.webp', year: '2024–25', alt: 'Board Results 2024-25 Baihar - Best School Results Balaghat District - Little Kingdom School Topper - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
   { id: 3, url: '/result24-25(1).webp', year: '2024–25 (I)', alt: 'Academic Results Baihar School - Best Performance Balaghat - Little Kingdom School Results 2024-25' },
   { id: 4, url: '/result24-25(2).webp', year: '2024–25 (II)', alt: 'School Results Baihar 2024-25 - Top Students Balaghat District - Little Kingdom School Academic Record' },
-  { id: 5, url: '/boardresultclass82025-26.jpg', year: '2025–26 (Class 8)', alt: 'Class 8 Board Results Baihar 2025-26 - Best School Results Balaghat - Little Kingdom School MPBSE - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
+  { id: 5, url: '/boardresultclass82025-26.jpg', year: '2025–26 (Class 8)', alt: 'Class 8 Board Results Baihar 2025-26 - Best School Results Balaghat - Little Kingdom School MPBSE - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
   { id: 6, url: '/boardresultclass10th2025-26.jpg', year: '2025–26 (Class 10)', alt: 'Class 10 Board Results Baihar 2025-26 - District Topper Balaghat - Best School Little Kingdom MPBSE' },
   { id: 7, url: '/board-result.jpg', year: 'Board Result', alt: 'Best Board Exam Results Baihar - School Toppers Balaghat District - Little Kingdom School Academic Excellence' },
 ];
@@ -47,7 +47,7 @@ const AcademicResultPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white p-4 rounded-full z-10 text-2xl font-bold" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Academic Board Exam Results at Little Kingdom Senior Secondary School Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[80vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Academic Board Exam Results at Little Kingdom Senior Secondary School Baihar - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[80vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{resultImages[lightboxIndex].year} Results</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white p-4 rounded-full z-10 text-2xl font-bold" onClick={next}>›</button>

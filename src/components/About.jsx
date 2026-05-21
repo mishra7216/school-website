@@ -58,7 +58,7 @@ const About = () => {
           <div className="absolute -bottom-10 -left-8 sm:-bottom-12 sm:-left-12 z-20 rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white w-40 h-40 sm:w-48 sm:h-48 hidden sm:block transform hover:scale-105 transition-transform duration-500">
             <img 
                src="/about-secondary.jpg" 
-               alt="Students Learning at Best School in Baihar - Little Kingdom School Balaghat - Quality Education Since 2009 - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
+               alt="Students Learning at Best School in Baihar - Little Kingdom School Balaghat - Quality Education Since 2009 - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
                className="w-full h-full object-cover"
                onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1427504494785-3a9a27b43c62?q=80&w=800&auto=format&fit=crop' }}
             />

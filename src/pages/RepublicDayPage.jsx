@@ -65,7 +65,7 @@ const timeline = [
 ];
 
 const glimpses = [
-  { url: '/republicdayglimpses1.jpg', caption: 'Behind the Scenes', alt: 'Republic Day Preparation Baihar - Best School Dance Practice Balaghat - Little Kingdom School Rehearsal - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
+  { url: '/republicdayglimpses1.jpg', caption: 'Behind the Scenes', alt: 'Republic Day Preparation Baihar - Best School Dance Practice Balaghat - Little Kingdom School Rehearsal - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल' },
   { url: '/republicdayglimpses2.webp', caption: 'Stage Moments', alt: 'Republic Day Performance Baihar - Patriotic Dance Balaghat District - Little Kingdom School Stage' },
 ];
 

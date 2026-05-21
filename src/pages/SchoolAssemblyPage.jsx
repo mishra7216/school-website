@@ -13,13 +13,13 @@ const wings = [
   {
     label: 'Senior Wing — I',
     image: '/schoolassemblyseniorwing(1).jpeg',
-    alt: 'Best School in Balaghat District - Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat - Top School Baihar MP - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
+    alt: 'Best School in Balaghat District - Best School in Baihar - Little Kingdom Senior Secondary School Building Baihar Balaghat - Top School Baihar MP - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
     description: 'Senior students lead by example, conducting assembly with discipline, purpose, and pride that inspires the entire school.',
   },
   {
     label: 'Senior Wing — II',
     image: '/schoolassemblyseniorwing(2).jpeg',
-    alt: 'School Assembly Baihar - Students and Teachers United - Best School in Balaghat District - Little Kingdom School - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
+    alt: 'School Assembly Baihar - Students and Teachers United - Best School in Balaghat District - Little Kingdom School - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल',
     description: 'A moment of unity — students and teachers stand together, reinforcing the values of respect, responsibility, and excellence.',
   },
 ];
@@ -58,7 +58,7 @@ const SchoolAssemblyPage = () => {
           <button className="absolute top-5 right-5 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full z-10" onClick={() => setLightbox(null)}><X size={24} /></button>
           <button className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={prev}>‹</button>
           <div className="flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
-            <img src={lightbox} alt="Best School in Balaghat - Best School in Baihar - Little Kingdom Senior Secondary School Building Balaghat District - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
+            <img src={lightbox} alt="Best School in Balaghat - Best School in Baihar - Little Kingdom Senior Secondary School Building Balaghat District - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="max-w-[90vw] max-h-[82vh] object-contain rounded-2xl shadow-2xl" />
             <div className="text-[#D4AF37] font-bold text-sm tracking-widest uppercase">{wings[lightboxIndex].label}</div>
           </div>
           <button className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/25 text-white px-5 py-4 rounded-full z-10 text-3xl" onClick={next}>›</button>

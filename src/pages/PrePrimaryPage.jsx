@@ -12,10 +12,10 @@ const PrePrimaryPage = () => {
   // Carousel State and Logic
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten in Baihar - Nursery School Balaghat - Joyful Playtime at Little Kingdom School Pre-Primary Wing Baihar - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
+    { url: "/kindergarten-banner-1.jpg", caption: "Joyful Playtime", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten in Baihar - Nursery School Balaghat - Joyful Playtime at Little Kingdom School Pre-Primary Wing Baihar - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
     { url: "/kindergarten-banner-2.jpg", caption: "Creative Arts", alt: "Best School in Balaghat - Best School in Baihar - Best Pre-Primary School in Baihar Balaghat - Creative Arts Kindergarten - Little Kingdom School Nursery Wing - Baihar ka sabse acha school - Balaghat ka sabse acha school" },
     { url: "/kindergarten-banner-3.jpg", caption: "Learning Together", alt: "Best School in Balaghat - Best School in Baihar - Top Kindergarten Baihar - Best Nursery School in Balaghat District - Children Learning at Little Kingdom School - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" },
-    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten Outdoor Activities Baihar - Pre-Primary School Balaghat - Little Kingdom School Kindergarten - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" }
+    { url: "/kindergarten-banner-4.jpg", caption: "Outdoor Activities", alt: "Best School in Balaghat - Best School in Baihar - Best Kindergarten Outdoor Activities Baihar - Pre-Primary School Balaghat - Little Kingdom School Kindergarten - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" }
   ];
 
   // Auto-play the carousel every 4 seconds
@@ -111,7 +111,7 @@ const PrePrimaryPage = () => {
              <div className="absolute inset-0 bg-[#FF6B6B]/20 rounded-full blur-xl transform translate-x-3 translate-y-3"></div>
              <img 
                src="/Kindergarten%20Head.jpeg" 
-               alt="Mrs Asna Qureshi - Best Kindergarten Head in Baihar - Nursery School Teacher Balaghat - Little Kingdom School Pre-Primary - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
+               alt="Mrs Asna Qureshi - Best Kindergarten Head in Baihar - Nursery School Teacher Balaghat - Little Kingdom School Pre-Primary - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" 
                title="Mrs Asna Qureshi - Kindergarten Head - Best Nursery School Baihar Balaghat" 
                className="relative w-full h-full object-cover rounded-full border-[8px] border-white shadow-lg bg-gray-100 transform group-hover:-rotate-3 group-hover:scale-105 transition-all duration-300"
              />

@@ -167,7 +167,7 @@ const AdmissionPage = () => {
                 <div className="w-72 h-72 rounded-full border-4 border-[#D4AF37]/30 absolute inset-0 scale-110 animate-pulse pointer-events-none"></div>
                 {/* Main badge circle */}
                 <div className="w-72 h-72 rounded-full bg-white/10 backdrop-blur-md border-4 border-[#D4AF37]/60 flex items-center justify-center shadow-[0_0_60px_rgba(212,175,55,0.2)]">
-                  <img src="/logo.png" alt="LKPS Logo - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="w-48 h-48 object-contain drop-shadow-lg" onError={(e) => { e.target.style.display='none'; }} />
+                  <img src="/logo.png" alt="LKPS Logo - Best school in Baihar - Best school in Balaghat - Baihar ka sabse acha school - Balaghat ka sabse acha school - बैहर का सबसे अच्छा स्कूल - बालाघाट का सबसे अच्छा स्कूल" className="w-48 h-48 object-contain drop-shadow-lg" onError={(e) => { e.target.style.display='none'; }} />
                 </div>
               </div>
             </div>
