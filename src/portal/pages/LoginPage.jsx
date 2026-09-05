@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Sparkles, Shield, Key, Lock, ArrowRight, UserCheck, CheckCircle2, Bot, BookOpen } from 'lucide-react';
 
@@ -8,8 +8,13 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { login } = useAuth();
+  const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+
+  // Already logged in → skip login form and go to dashboard
+  if (isAuthenticated) {
+    return <Navigate to="/student-ai" replace />;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();

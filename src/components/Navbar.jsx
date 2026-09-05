@@ -89,7 +89,7 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
 
-            <Link to="/student-ai" className="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-900 text-cyan-300 hover:text-white border border-cyan-500/40 px-5 py-2.5 rounded-full font-bold text-xs transition-all shadow-md hover:shadow-cyan-500/20 transform hover:-translate-y-0.5 flex items-center space-x-2">
+            <Link to="/student-ai/login" className="bg-gradient-to-r from-slate-900 via-indigo-950 to-blue-900 text-cyan-300 hover:text-white border border-cyan-500/40 px-5 py-2.5 rounded-full font-bold text-xs transition-all shadow-md hover:shadow-cyan-500/20 transform hover:-translate-y-0.5 flex items-center space-x-2">
               <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
               <span>Student AI Portal</span>
             </Link>
@@ -117,7 +117,7 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-2xl overflow-y-auto max-h-[85vh]">
           <div className="px-5 pt-3 pb-8 space-y-2">
             
-            <Link to="/student-ai" onClick={() => setIsOpen(false)} className="flex items-center justify-between px-4 py-4 border-b border-gray-50 text-base font-bold text-indigo-700 bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-xl">
+            <Link to="/student-ai/login" onClick={() => setIsOpen(false)} className="flex items-center justify-between px-4 py-4 border-b border-gray-50 text-base font-bold text-indigo-700 bg-indigo-50/50 hover:bg-indigo-100/50 transition-colors rounded-xl">
               <div className="flex items-center space-x-2.5">
                 <Sparkles className="h-5 w-5 text-cyan-600" />
                 <span className="font-extrabold">Student AI Portal</span>
