@@ -24,28 +24,33 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }, []);
 
-  // Login handler supporting student ID format (e.g., LK20261042)
+  // Login handler — credentials issued by school administration only
   const login = (studentId, password) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const cleanId = studentId.trim().toUpperCase();
-        // Allow valid student ID login with default or custom credentials
-        if (cleanId === 'LK20261042' || cleanId.startsWith('LK')) {
+        const cleanPass = password.trim().toUpperCase();
+
+        // Valid credential pair set by school admin
+        const VALID_ID = 'LKPS20261';
+        const VALID_PASS = 'DOTHEBEST';
+
+        if (cleanId === VALID_ID && cleanPass === VALID_PASS) {
           const userSession = {
             studentId: cleanId,
             name: studentData?.profile?.name || 'Aradhya Mishra',
-            role: 'STUDENT', // Roles: STUDENT, TEACHER, ADMIN
+            role: 'STUDENT',
             class: '10th',
             section: 'A',
             school: 'Little Kingdom Senior Secondary School, Baihar',
             lastLogin: new Date().toISOString(),
           };
-          
+
           localStorage.setItem('lk_ai_current_user', JSON.stringify(userSession));
           setCurrentUser(userSession);
           resolve(userSession);
         } else {
-          reject(new Error('Invalid Student ID or Password. Try LK20261042 / password123'));
+          reject(new Error('Invalid Student ID or Password. Please use the credentials provided by your school.'));
         }
       }, 400);
     });
