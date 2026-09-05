@@ -8,6 +8,9 @@ export const AuthProvider = ({ children }) => {
   const [studentData, setStudentData] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // The single valid student ID — must match exactly what school issued
+  const VALID_STUDENT_ID = 'LKPS20261';
+
   useEffect(() => {
     // Initialize session & load persistent student database
     const savedUser = localStorage.getItem('lk_ai_current_user');
@@ -16,9 +19,17 @@ export const AuthProvider = ({ children }) => {
 
     if (savedUser) {
       try {
-        setCurrentUser(JSON.parse(savedUser));
+        const parsed = JSON.parse(savedUser);
+        // Validate: reject any stale session that doesn't match current credentials
+        if (parsed?.studentId === VALID_STUDENT_ID) {
+          setCurrentUser(parsed);
+        } else {
+          // Stale / old credential session — clear it so login page shows
+          localStorage.removeItem('lk_ai_current_user');
+        }
       } catch (e) {
         console.error('Failed to parse saved user session:', e);
+        localStorage.removeItem('lk_ai_current_user');
       }
     }
     setLoading(false);
