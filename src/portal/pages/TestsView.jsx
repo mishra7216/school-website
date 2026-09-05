@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FileSpreadsheet, PlusCircle } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import AddTestModal from '../components/AddTestModal';
 
 const TestsView = () => {
   const { studentData } = useAuth();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const assessments = studentData?.assessments || [];
 
   return (
     <div className="space-y-6">
+      <AddTestModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+
       <div className="flex items-center justify-between p-6 rounded-3xl bg-slate-900 border border-slate-800">
         <div className="flex items-center space-x-3">
           <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
@@ -19,7 +26,10 @@ const TestsView = () => {
           </div>
         </div>
 
-        <button className="px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl flex items-center space-x-2 transition-all">
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="px-4 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs rounded-xl flex items-center space-x-2 transition-all"
+        >
           <PlusCircle className="w-4 h-4" />
           <span>Add Test Result</span>
         </button>

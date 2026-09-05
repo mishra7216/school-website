@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import AddTestModal from '../components/AddTestModal';
 import {
   Sparkles,
   TrendingUp,
@@ -19,6 +20,7 @@ import {
 const DashboardView = () => {
   const { studentData } = useAuth();
   const navigate = useNavigate();
+  const [isAddTestOpen, setIsAddTestOpen] = useState(false);
 
   const profile = studentData?.profile || {};
   const metrics = studentData?.metrics || {};
@@ -28,6 +30,12 @@ const DashboardView = () => {
 
   return (
     <div className="space-y-8 animate-fadeIn">
+      {/* Add Test Result Modal */}
+      <AddTestModal
+        isOpen={isAddTestOpen}
+        onClose={() => setIsAddTestOpen(false)}
+      />
+
       {/* Header Academic Pulse Greeting */}
       <div className="relative p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-slate-900 via-indigo-950/80 to-slate-900 border border-slate-800 shadow-2xl overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -55,7 +63,7 @@ const DashboardView = () => {
             </button>
 
             <button
-              onClick={() => navigate('/student-ai/tests')}
+              onClick={() => setIsAddTestOpen(true)}
               className="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 font-bold text-xs transition-all flex items-center space-x-2"
             >
               <PlusCircle className="w-4 h-4 text-cyan-400" />

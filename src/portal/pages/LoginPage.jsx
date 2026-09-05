@@ -4,8 +4,8 @@ import { useAuth } from '../context/AuthContext';
 import { Sparkles, Shield, Key, Lock, ArrowRight, UserCheck, CheckCircle2, Bot, BookOpen } from 'lucide-react';
 
 const LoginPage = () => {
-  const [studentId, setStudentId] = useState('LK20261042');
-  const [password, setPassword] = useState('password123');
+  const [studentId, setStudentId] = useState('');
+  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { login } = useAuth();
@@ -173,15 +173,9 @@ const LoginPage = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between pt-1 text-xs">
-                <span className="text-slate-400">Role: <strong className="text-cyan-400 font-mono">STUDENT</strong></span>
-                <button
-                  type="button"
-                  onClick={fillDemoStudent}
-                  className="text-cyan-400 hover:text-cyan-300 font-semibold underline underline-offset-2"
-                >
-                  Quick Demo Login
-                </button>
+              <div className="pt-1 text-xs text-slate-400 flex items-center justify-between">
+                <span>Role: <strong className="text-cyan-400 font-mono">STUDENT</strong></span>
+                <span className="text-[11px] text-slate-500 italic">Issued by School Admin</span>
               </div>
 
               <button
